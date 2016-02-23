@@ -105,5 +105,5 @@ function figure1_CloseRequestFcn(hObject, eventdata, handles)
 
 % Hint: delete(hObject) closes the figure
 delete(hObject);
-clc;clear;
+clc;clear;close all;
 fprintf('Bye for now...\n');

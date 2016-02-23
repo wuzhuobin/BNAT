@@ -14,7 +14,7 @@ for i = 1:size(allFolders1)
         matlabbatch = dir(strcat(foldername2, '\*Matlabbatch*'));
         load(strcat(foldername2, '\', matlabbatch(1).name));
         sess = matlabbatch{1,1}.spm.stats.fmri_spec.sess;
-        orginal = dir(strcat(foldername2, '\Res*'));
+        orginal = dir(strcat(foldername2, '\Res_*'));
         counterOriginal = 0;
         
         fprintf(strcat('Moving files from\t', strrep(foldername2,'\', '\\')));
